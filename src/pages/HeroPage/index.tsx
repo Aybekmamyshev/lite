@@ -1,12 +1,13 @@
 import React, {useContext, useState} from 'react';
 
-import useFetch from "../../hook/useFetch";
 import styles from './hero.module.scss'
 import {Link} from "react-router-dom";
-import {api} from "../../constants";
-import useCategory from "../../hook/useCategory";
-import {CustomContext} from "../../hook/Context";
+
+
+
 import Container from "../../components/Component";
+import useCategory from "../../hooks/useCategory";
+import {CustomContext} from "../../context";
 
 
 
