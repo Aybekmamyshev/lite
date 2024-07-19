@@ -1,12 +1,13 @@
 import React, {Suspense} from 'react';
 import Header from "../Header";
 import {Outlet} from "react-router-dom";
+import CircularIndeterminate from "../Loading";
 
 const Layout = () => {
     return (
         <>
             <Header/>
-            <Suspense fallback={<h1>Loading...</h1>}>
+            <Suspense fallback={<CircularIndeterminate/>}>
                 <Outlet/>
             </Suspense>
         </>
